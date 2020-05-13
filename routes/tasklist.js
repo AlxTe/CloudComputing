@@ -23,7 +23,7 @@ const taskDao = require("../models/taskDao");
      res.render("index", {
        title: "My ToDo List ",
        tasks: items
-     });
+     })
    }
 
    async addTask(req, res) {

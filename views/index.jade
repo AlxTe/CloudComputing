@@ -17,6 +17,7 @@ block content
            each task in tasks
              tr
                td #{task.name}
+               br
                td #{task.category}
                - var date  = new Date(task.date);
                - var day   = date.getDate();
@@ -31,9 +32,13 @@ block content
        button.btn.btn-primary(type="submit") Update tasks
      hr
      form.well(action="/addtask", method="post")
-       label Item Name:
-       input(name="name", type="textbox")
-       label Item Category:
-       input(name="category", type="textbox")
+       label Item Name: 
+       input(name="name", type="textbox", placeholder="Insert activity...")
+       br
+       label Item Category: 
+       input(name="category", type="textbox", placeholder="Insert category...")
+       br
        br
        button.btn(type="submit") Add item
+       
+      h3 #{msg}
