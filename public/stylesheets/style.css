@@ -1,8 +1,39 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 70%;
+  margin: auto;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-a {
-  color: #00B7FF;
+.btn {
+    background-color: cadetblue;
+    color: white;
+    font-family: monospace;
+}
+
+.navbar-inverse {
+    background-color: cadetblue;
+    border-color: darkred;
+    color: white;
+    font-family: monospace;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+    font-family: monospace;
+}
+
+.table-striped>tbody>tr:nth-of-type(1) {
+    background-color: cadetblue;
+    color: white;
+    font-family: monospace;
+}
+
+.h1, h1 {
+    font-size: 36px;
+    font-family: monospace;
+    color: white;
+    background-color: #16a8ad;
 }

@@ -44,6 +44,7 @@
      return resources
    }
 
+
    async addItem(item) {
      debug('Adding an item to the database')
      item.date = Date.now()

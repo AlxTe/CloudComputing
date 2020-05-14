@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "nodejs ./bin/www"
+    "start": "nodejs ../app"
+    //"start": "nodejs ./bin/www"
   },
   "dependencies": {
     "@azure/cosmos": "^3.6.3",

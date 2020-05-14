@@ -1,15 +1,18 @@
 extends layout
 block content
-     h1 #{title}
-     br
-
+     h1 
+       center My Tasks
      form(action="/completetask", method="post")
       table.table.table-striped.table-bordered
          tr
-           td Name
-           td Category
-           td Date
-           td Complete
+           td 
+             b Name
+           td 
+             b Category
+           td 
+             b Date
+           td 
+             b Complete
          if (typeof tasks === "undefined")
            tr
              td
@@ -33,12 +36,12 @@ block content
      hr
      form.well(action="/addtask", method="post")
        label Item Name: 
-       input(name="name", type="textbox", placeholder="Insert activity...")
+           input(name="name", type="textbox", placeholder="Insert activity...")
+       br
        br
        label Item Category: 
-       input(name="category", type="textbox", placeholder="Insert category...")
+           input(name="category", type="textbox", placeholder="Insert category...")
        br
        br
        button.btn(type="submit") Add item
-       
-      h3 #{msg}
+  
